@@ -6,8 +6,6 @@ services:
     build:
       context: node
     container_name: app
-    volumes:
-      - ./node:/usr/src/app
     tty: true
     ports:
       - "3000:3000"
