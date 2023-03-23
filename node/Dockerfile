@@ -7,7 +7,7 @@ RUN apt-get update && \
     wget -q -O /usr/bin/wait-for https://raw.githubusercontent.com/eficode/wait-for/v2.2.3/wait-for && \
     chmod +x /usr/bin/wait-for
 
-RUN npm install mysql express --save
+RUN echo "{}" >> package.json && npm install mysql express --save
 
 COPY index.js .
 
